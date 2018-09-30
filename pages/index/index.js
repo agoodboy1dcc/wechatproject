@@ -1,13 +1,16 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
 Page({
   data: {
-    motto: '你好',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  navbarTap: function (e) {
+    this.setData({
+      currentTab: e.currentTarget.dataset.idx
+    })
   },
   //事件处理函数
   bindViewTap: function() {
@@ -16,8 +19,6 @@ Page({
     })
   },
   onLoad: function () {
-    var inTheatersUrl = app.globalData.doubanBase +"/v2/movie/in_theaters"+"?start=0&count=6";
-    this.getMovieListDate(inTheatersUrl,"inTheaters","正在热映")
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

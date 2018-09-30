@@ -1,0 +1,11 @@
+<!--pages/map/map.wxml-->
+<view class='content'>
+  <view class='today'>
+    <view class='info'>
+      <view class='temp'>{{weather.temperature.data}}℃</view>
+      <view class='weather'>{{weather.weather.data}} {{weather.winddirection.data}} {{weather.windpower.data}}</view>
+      <view></view>
+      <view class='city'>{{weather.city.data}}</view>
+    </view>
+  </view>
+</view>

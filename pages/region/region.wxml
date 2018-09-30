@@ -1,0 +1,25 @@
+<!--pages/region/region.wxml-->
+<view>
+<video style="width:100%" src='http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400' autoplay='true' loop='true'></video>
+</view>
+<view class="section">
+  <view class="section__title">选择器</view>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      选择地区：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker mode="date" value="{{date}}" bindchange='bindDateChange' custom-item="{{customItem}}">
+    <view class="picker">
+      选择时间：{{date}}
+    </view>
+  </picker>
+</view>
+<view>
+<view class="bdr" bindtap='getmap'>
+<image src='/assets/logs/dw1.png' style="width:43rpx;height:48rpx;"/>
+<input id="mapid" style="text-aligh:center;" style="width:100%;" value="{{address}}"/>
+</view>
+</view>

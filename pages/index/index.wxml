@@ -1,4 +1,12 @@
 <!--index.wxml-->
+<view class='page_row' bindtap="suo">
+  <view class="search">
+    <view class="df search_arr">
+      <icon class="searchcion" size='20' type="search"></icon>
+      <input class="" disabled placeholder="请输入关键字" value="{{searchValue}}" /> </view>
+  </view>
+  <view class='sousuo'>搜索</view>
+</view>
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -8,6 +16,10 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <scroll-view scroll-x="true" class="user-motto" class="scroll-view-x" style="width:100%;">
+      <view class="scroll-x-item bc_green"></view>
+      <view class="scroll-x-item bc_red"></view>
+      <view class="scroll-x-item bc_yellow"></view>
+    </scroll-view>
   </view>
 </view>

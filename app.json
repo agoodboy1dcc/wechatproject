@@ -1,12 +1,55 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/dex/dex",
+    "pages/music/music",
+    "pages/region/region",
+    "pages/map/map"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/logs/Message.png",
+        "selectedIconPath": "assets/logs/Home.png"
+      },
+      {
+        "pagePath": "pages/dex/dex",
+        "text": "每日新闻",
+        "iconPath": "assets/logs/date.png",
+        "selectedIconPath": "assets/logs/imagewall.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "assets/musicimage/music1.png",
+        "selectedIconPath": "assets/musicimage/music2.png"
+      },
+      {
+        "pagePath": "pages/region/region",
+        "text": "地区",
+        "iconPath": "assets/lightimage/zhuan1.png",
+        "selectedIconPath": "assets/lightimage/zhuan2.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "天气",
+        "iconPath": "assets/weatherimg/weather.png",
+        "selectedIconPath": "assets/weatherimg/weather2.png"
+      }
+    ]
   }
 }

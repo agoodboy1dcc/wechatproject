@@ -1,0 +1,10 @@
+/* pages/region/region.wxss */
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}
+.bdr{
+  display: flex;
+  border:1rpx solid #b6b6b6;
+  border-radius: 15rpx;
+}
