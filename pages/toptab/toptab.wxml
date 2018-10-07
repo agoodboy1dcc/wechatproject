@@ -1,0 +1,52 @@
+<!--pages/toptab/toptab.wxml-->
+<view class="top-tab flex-wrp flex-tab ">
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+</view>
+<view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+  <swiper indicator-dots="true" autoplay='true' interval='3000'>
+    <block wx:for="{{imageUrl}}">
+      <swiper-item>
+        <image src="{{item}}" class="bj"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="ctnt1" hidden="{{currentNavtab==1 ? '' : true}}">
+ <!--垂直滚动，这里必须设置高度-->
+<scroll-view scroll-y="true" style="height: 200px">
+  <view style="background: red; width: 100px; height: 100px"></view>
+  <view style="background: green; width: 100px; height: 100px"></view>
+  <view style="background: blue; width: 100px; height: 100px"></view>
+  <view style="background: yellow; width: 100px; height: 100px"></view>
+</scroll-view>
+<!--水平滚动-->
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
+  <!--  display: inline-block-->
+  <view style="background: red; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: green; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: blue; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: yellow; width: 200px; height: 100px; display: inline-block"></view>
+</scroll-view>
+</view>
+<view class="ctnt2" hidden="{{currentNavtab==2 ? '' : true}}">
+  <scroll-view style='height:500px' scroll-y="true">
+    <view class="items-list">
+      <view class="pro-item" wx:for="{{proList}}">
+        <image class='pro-logo' src='{{item.logo}}'></image>
+        <view class="pro-body">
+          <view class="pro-title">
+            {{item.title}}
+          </view>
+          <view class="pro-desc">
+            {{item.desc}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<view class="ctnt3" hidden="{{currentNavtab==3 ? '' : true}}">
+  <text>收藏</text>
+</view>

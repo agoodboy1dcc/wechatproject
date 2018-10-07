@@ -5,7 +5,9 @@
     "pages/dex/dex",
     "pages/music/music",
     "pages/region/region",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/toptab/toptab",
+    "pages/shopcar/shopcar"
   ],
   "requiredBackgroundModes": [
     "audio"
@@ -27,7 +29,7 @@
         "selectedIconPath": "assets/logs/Home.png"
       },
       {
-        "pagePath": "pages/dex/dex",
+        "pagePath": "pages/toptab/toptab",
         "text": "每日新闻",
         "iconPath": "assets/logs/date.png",
         "selectedIconPath": "assets/logs/imagewall.png"

@@ -4,8 +4,8 @@ Page({
   //播放
   listenerButtonPlay: function() {
     wx.playBackgroundAudio({
-      dataUrl: 'https://m10.music.126.net/20180929180553/ef131db1218277937c8e83a395415c66/ymusic/edea/8ed2/5693/b9ce9986645cb3a4869be882389e3c6a.mp3',
-      title: '杜晨晨是神',
+      dataUrl: 'http://isure.stream.qqmusic.qq.com/C400003hw4633o7Vsv.m4a?guid=32423976&vkey=0FDF9C8A99531E990EB326252DA195E3DF2FB1C51A3B13026C21DCAB49ECBDFBC344767A278ECA3B1B441067C68D9EBDB101999BC634F884&uin=371&fromtag=66',
+      title: '测试音乐链接',
       //图片地址地址 
       coverImgUrl: 'http://p2.music.126.net/XVYltHXVMNAri4hqhwWykA==/109951163514458874.jpg'
     })

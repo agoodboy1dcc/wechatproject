@@ -56,6 +56,7 @@ page {
 }
 
 .search {
+  margin-top: 10rpx;
   width: 80%;
 }
 
@@ -78,9 +79,11 @@ page {
 }
 
 .sousuo {
+  margin-top: 10rpx;
   margin-left: 15rpx;
   width: 15%;
-  line-height: 150%;
+  height: 60rpx;
+  background-color: #298de5;
   text-align: center;
   border: 1px solid #d0d0d0;
   border-radius: 10rpx;
