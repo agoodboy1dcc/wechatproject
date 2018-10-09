@@ -6,8 +6,7 @@
     "pages/music/music",
     "pages/region/region",
     "pages/map/map",
-    "pages/toptab/toptab",
-    "pages/shopcar/shopcar"
+    "pages/toptab/toptab"
   ],
   "requiredBackgroundModes": [
     "audio"

@@ -48,5 +48,6 @@
   </scroll-view>
 </view>
 <view class="ctnt3" hidden="{{currentNavtab==3 ? '' : true}}">
+  
   <text>收藏</text>
 </view>

@@ -4,5 +4,4 @@
 <button class="button-style" type="primary" bindtap="listenerButtonSeek">设置播放进度</button>
 <button class="button-style" type="primary" bindtap="listenerButtonStop">停止播放</button>
 <button class="button-style" type="primary" bindtap="listenerButtonGetPlayState">获取播放状态</button>
-<audio id="musicid" src=""></audio>
-
+<audio id="musicid" src="http://27.221.84.30/amobile.music.tc.qq.com/C400003hw4633o7Vsv.m4a?guid=32423976&vkey=7B969F55FD601C616932E05D2246BF431923DD5B3DDCA4E1C0B7F3869C03EF39EC8443E5C92F0E53E21246A14D3073229DD601B0D72864A5&uin=371&fromtag=66"     loop='true' poster='http://p2.music.126.net/XVYltHXVMNAri4hqhwWykA==/109951163514458874.jpg' name='伍六七' author='杜晨晨' controls='true'></audio>
